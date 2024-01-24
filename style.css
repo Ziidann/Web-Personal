@@ -1,0 +1,345 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(57, 56, 56);
+}
+
+/* Navbar */
+.navbar {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 7%;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 0px 31px 32px -27px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 31px 32px -27px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 31px 32px -27px rgba(0, 0, 0, 0.39);
+}
+
+.navbar .name h1 {
+  font-size: 2rem;
+  color: aqua;
+}
+
+.navbar .menu a {
+  margin: 0 0.5rem;
+  color: black;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+.navbar .menu a:hover {
+  color: rgb(0, 255, 255);
+  transition: 0.3s;
+}
+
+/* .navbar .navbar-extra a {
+  padding: 0 0.3rem;
+  color: aqua;
+} */
+#hamburger-menu {
+  display: none;
+  color: aqua;
+  position: relative;
+}
+
+/* Home */
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.deskripsi .warnaAqua {
+  color: aqua;
+}
+
+.deskripsi h1 {
+  font-size: 3rem;
+  margin-top: 1.5rem;
+}
+
+.deskripsi h1 span {
+  color: aqua;
+}
+
+.foto img {
+  width: 25rem;
+  height: 30rem;
+  border-radius: 30%;
+  filter: saturate(0%);
+  -webkit-filter: saturate(0%);
+  -moz-filter: saturate(0%);
+  box-shadow: 0px 0px 15px 3px rgba(0, 255, 255, 1);
+}
+
+.btn {
+  border-radius: 0.3rem;
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin-top: 4rem;
+  color: aqua;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: aqua;
+  color: black;
+  transition: 0.2s;
+}
+
+/* About */
+.judul {
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.43);
+}
+
+.parag {
+  display: flex;
+  gap: 7rem;
+  padding: 2rem 7%;
+  text-align: justify;
+}
+
+.parag .p1,
+.p2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Project  */
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.card {
+  width: 25rem;
+  height: 22rem;
+  border: 1px solid aqua;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+.card img {
+  width: 24rem;
+  border-bottom: 1px solid aqua;
+}
+
+.card h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card .btn {
+  margin: 1rem;
+  border: 1px solid aqua;
+}
+
+/* Experience */
+.carousel {
+  display: grid;
+  margin: auto;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: mandatory;
+  scrollbar-width: none;
+  width: 50rem;
+}
+
+.card-carousel {
+  width: 30rem;
+  height: 26rem;
+  border: 1px solid aqua;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-carousel img {
+  width: 30rem;
+  height: 16rem;
+  object-fit: cover;
+  border-bottom: 1px solid aqua;
+}
+
+.card-carousel p {
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+/* Contact */
+.contact {
+  width: 50rem;
+  margin: auto;
+}
+
+.sosmed {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 2rem 0;
+  color: aqua;
+}
+
+.medsos {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.contact form input,
+form textarea {
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid aqua;
+}
+
+.contact a {
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+}
+
+.footer {
+  border-top: 1px solid aqua;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: aqua;
+}
+
+.logo a {
+  color: aqua;
+  margin: 0.1rem;
+  display: inline-block;
+}
+
+.logo a:hover,
+.footer .menu-bwh a:hover {
+  transform: scale(1.6);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.footer .menu-bwh a {
+  margin: 1rem 0.5rem;
+  display: inline-block;
+  color: aqua;
+  border: 1px solid aqua;
+  padding: 0 0.2rem;
+  border-radius: 0.5rem;
+}
+
+/* Media Queries */
+/* Leptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .menu {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 20rem;
+    height: 29rem;
+    background-color: aqua;
+    transition: 0.3s;
+  }
+
+  .navbar .menu.active {
+    right: 0;
+  }
+
+  .navbar .menu a {
+    display: block;
+    color: black;
+    margin: 1.5rem;
+    padding: 1rem;
+  }
+
+  .home {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .parag {
+    flex-wrap: wrap;
+    padding: 2rem 10rem;
+  }
+}
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  #home,
+  #about,
+  #project,
+  .footer,
+  .judul {
+    margin-left: 4rem;
+  }
+
+  .parag {
+    flex-wrap: wrap;
+    padding: 2rem 5rem;
+  }
+}
